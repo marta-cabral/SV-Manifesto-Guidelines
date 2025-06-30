@@ -52,6 +52,7 @@ p {
   top: 1em;
   width: auto;
   margin-top: 50vh;
+  mix-blend-mode: difference;
 }
 
 h1 {
@@ -70,6 +71,10 @@ nav a {
   position: inherit;
   margin-top: -1.5em;
   height: 70vh;
+}
+
+.hero-section div {
+  grid-column: 4 / 8;
 }
 
 /* ------------------HERO */
@@ -99,7 +104,7 @@ nav a {
 
 .img-grid {
   column-gap: 1rem;
-  padding: 1rem;
+  padding-top: 1rem;
 }
 
 .cols-1 {
@@ -112,11 +117,17 @@ nav a {
 
 .grid-item {
   break-inside: avoid;
-  margin-bottom: 1rem;
 }
 
-.grid-item img {
+img {
   width: 100%;
   display: block;
   border-radius: 3px;
+}
+
+.stick {
+  mix-blend-mode: difference;
+  top: 0.8em;
+  margin-left: 50em;
+  position: sticky;
 }
