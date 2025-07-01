@@ -201,4 +201,12 @@ img {
   #info {
     padding-bottom: 5em;
   }
+
+  .hero-section {
+    height: 60vh;
+  }
+
+  .navbar {
+    margin-top: 35vh;
+  }
 }
