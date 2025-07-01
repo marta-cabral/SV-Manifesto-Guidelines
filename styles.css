@@ -152,6 +152,7 @@ img {
 
   .hero-section{
     padding: 3em 1em 0 1em;
+    height: 40vh;
   }
 
   .hero-section div {
@@ -175,6 +176,10 @@ img {
 
   h1 {
     grid-column: 1 / 5;
+  }
+
+  .navbar {
+    margin-top: 25vh;
   }
 
   nav a{
@@ -202,11 +207,4 @@ img {
     padding-bottom: 5em;
   }
 
-  .hero-section {
-    height: 40vh;
-  }
-
-  .navbar {
-    margin-top: 25vh;
-  }
 }
