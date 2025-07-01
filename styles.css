@@ -79,9 +79,13 @@ nav a {
 
 /* ------------------HERO */
 
+.subtitle{
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
 .gb1 {
   color: rgb(85, 85, 85);
-  padding-top: 50px;
 }
 
 .fright {
@@ -130,4 +134,38 @@ img {
   top: 0.8em;
   margin-left: 50em;
   position: sticky;
+}
+
+.stick2 {
+  mix-blend-mode: difference;
+  top:5em;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  margin-left: 50em;
+  position: sticky;
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 13px;
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  a,
+  p {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+}
+
+h1 {
+  grid-column: 1 / 3;
+}
+ 
 }
