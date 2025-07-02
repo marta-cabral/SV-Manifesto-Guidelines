@@ -10,7 +10,7 @@ gsap.to(".a2",{
     y:-40,
     duration: 2,
     ease: "slow(0.2,1,false)",
-})
+}) 
 
 gsap.to(".a3",{
     y:-40,
@@ -35,21 +35,3 @@ gsap.utils.toArray(".img-grid").forEach((img) => {
     }
   });
 });
-
-//scroll smoother - ele funciona, mas remove os stickys
-
-//const smoother = ScrollSmoother.create({
-  //wrapper: "#smooth-wrapp",
-  //content: "#smooth-content",
-  //smooth: 1,
-  //effects: true,
-//});
-
-//trigger class sticky2
-//ScrollTrigger.create({
-  //trigger: ".",
-  //start: "top top",
-  //end: "bottom top", // altura do "sticky"
-  //pin: true,
-  //pinSpacing: false, // se quiseres que o espaço não seja mantido
-//});
