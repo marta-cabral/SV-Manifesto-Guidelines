@@ -23,14 +23,11 @@ a {
   color: #fff;
 }
 
-.sections {
-  padding: 0 1em;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 20px;
+  padding: 0 1em;
 }
 
 h1,
@@ -57,7 +54,9 @@ p {
 }
 
 h1 {
-  grid-column: 1 / 3;
+  grid-column: 4 / 11;
+  color: #00D1D1;
+  font-size: 26px;
 }
 
 nav a {
@@ -86,7 +85,21 @@ nav a {
 }
 
 .gb1 {
-  color: rgb(85, 85, 85);
+  padding-top: 2em;
+}
+
+.tag-section{
+  
+}
+
+.tag {
+  border: 1px solid red;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+}
+
+.tags p{
+  font-size: 16px;
 }
 
 .fright {
