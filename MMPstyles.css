@@ -34,10 +34,10 @@ a {
 }
 
 .image-button {
-  background-color: #00D1D1;
+  background-color: #00d1d1;
   width: 230px;
   height: 50px;
-  background-image: url('images/logokick.svg');
+  background-image: url("images/logokick.svg");
   background-size: 194px 26px;
   background-repeat: no-repeat;
   background-position: center;
@@ -74,12 +74,11 @@ p {
   margin-top: 37vh;
   mix-blend-mode: difference;
   z-index: 10;
-
 }
 
 h1 {
   grid-column: 4 / 11;
-  color: #00D1D1;
+  color: #00d1d1;
   font-size: 26px;
 }
 
@@ -107,48 +106,48 @@ nav a {
   font-size: 16px;
 }
 
-.a2{
+.a2 {
   padding-bottom: 2em;
 }
 
-h3{
-    position: absolute;
-    font-size: 10px;
-    font-family: Geist-Mono-Bold;
-    text-transform: uppercase;
-    letter-spacing: 6px;
-    color: #00D1D1;
-    padding: 0px 0px;
-    line-height: 24px;
-    writing-mode: sideways-lr;
-    text-align: right;
-    height: 250px;
+h3 {
+  position: absolute;
+  font-size: 10px;
+  font-family: Geist-Mono-Bold;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #00d1d1;
+  padding: 0px 0px;
+  line-height: 24px;
+  writing-mode: sideways-lr;
+  text-align: right;
+  height: 250px;
 }
 
 .gb1 {
   padding-top: 2em;
 }
 
-.tag-section{
+.tag-section {
   padding: 0 0 8em 0;
   grid-column: 4 / span 9 !important;
 }
 
 .tag {
   display: inline-block;
-  border: 1px solid #00D1D1;
+  border: 1px solid #00d1d1;
   padding: 0.5rem 0.5rem;
   margin-right: 0.5em;
 }
 
-.tag p{
+.tag p {
   font-size: 10px;
   font-family: Geist-Mono-Regular;
   text-transform: uppercase;
   letter-spacing: 6px;
   vertical-align: middle;
   text-align: center;
-  color: #00D1D1;
+  color: #00d1d1;
 }
 
 .fright {
@@ -169,21 +168,28 @@ h3{
   padding-bottom: 10em;
 }
 
-#colophon{
+#colophon {
   padding-top: 5em;
   padding-bottom: 10em;
 }
 
 .col-container {
-  display: table; /* Make the container element behave like a table */
-  width: 100%; /* Set full-width to expand the whole page */
-  border-collapse: separate;
-  border-spacing: 1rem 0;
-  padding-bottom: 1rem;
+  display: flex;
+  align-items: stretch; /* This ensures children are equal height */
+  padding: 13px 0 0 0;
+  gap: 13px;
 }
 
 .col {
-  display: table-cell; /* Make elements inside the container behave like table cells */
+  flex: 1;
+  display: flex;
+}
+
+.col img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* or contain if you don't want cropping */
+  display: block;
 }
 
 .grid-item {
@@ -194,6 +200,7 @@ img {
   width: 100%;
   display: block;
   border-radius: 3px;
+  display: table-cell;
 }
 
 .stick {
@@ -201,8 +208,7 @@ img {
   top: 0.8em;
   margin-left: 50em;
   position: sticky;
-    z-index: 10;
-
+  z-index: 10;
 }
 
 .stick2 {
@@ -212,7 +218,6 @@ img {
   margin-bottom: 2em;
   position: sticky;
   z-index: 10;
-
 }
 
 @media (max-width: 600px) {
@@ -222,7 +227,7 @@ img {
     column-gap: 13px;
   }
 
-  .hero-section{
+  .hero-section {
     padding: 3em 1em 0 1em;
     height: 60vh;
   }
@@ -254,15 +259,15 @@ img {
     margin-top: 35vh;
   }
 
-  nav a{
+  nav a {
     grid-column: 5 / 6;
   }
 
-  .title{
+  .title {
     grid-column: 1 / 6;
   }
 
-  .info{
+  .info {
     grid-column: 1 / 6;
   }
 
@@ -278,5 +283,4 @@ img {
   #info {
     padding-bottom: 5em;
   }
-
 }
