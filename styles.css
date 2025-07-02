@@ -52,6 +52,8 @@ p {
   width: auto;
   margin-top: 50vh;
   mix-blend-mode: difference;
+  z-index: 10;
+
 }
 
 h1 {
@@ -143,7 +145,7 @@ img {
   margin-left: 50em;
   margin-bottom: 2em;
   position: sticky;
-    z-index: 10;
+  z-index: 10;
 
 }
 

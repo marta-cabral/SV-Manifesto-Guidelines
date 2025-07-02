@@ -1,22 +1,18 @@
 //animação dos blocos do header
+gsap.fromTo(".a1", 
+  { y: 40, opacity: -0 }, 
+  { y: 0, opacity: 1, duration: 1, ease: "slow2.out" }
+);
 
-gsap.to(".a1",{
-    y:-40,
-    duration: 1,
-    ease: "slow(0.2,1,false)",
-})
+gsap.fromTo(".a2", 
+  { y: 40, opacity: -0 }, 
+  { y: 0, opacity: 1, duration: 2, ease: "slow2.out" }
+);
 
-gsap.to(".a2",{
-    y:-40,
-    duration: 2,
-    ease: "slow(0.2,1,false)",
-}) 
-
-gsap.to(".a3",{
-    y:-40,
-    duration: 2.5,
-    ease: "slow(0.2,1,false)",
-})
+gsap.fromTo(".a3", 
+  { y: 40, opacity: -0 }, 
+  { y: 0, opacity: 1, duration: 2.5, ease: "slow2.out" }
+);
 
 //pequeno movimento das imagens quando são visualizadas
 gsap.registerPlugin(ScrollTrigger);
