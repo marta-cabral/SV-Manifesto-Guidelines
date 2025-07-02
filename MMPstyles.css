@@ -3,6 +3,16 @@
   src: url(fonts/SV-Geist.ttf);
 }
 
+@font-face {
+  font-family: Geist-Mono-Regular;
+  src: url(fonts/GeistMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: Geist-Mono-Bold;
+  src: url(fonts/GeistMono-Bold.ttf);
+}
+
 html,
 body {
   margin: 0;
@@ -47,7 +57,7 @@ p {
   position: sticky;
   top: 1em;
   width: auto;
-  margin-top: 50vh;
+  margin-top: 37vh;
   mix-blend-mode: difference;
   z-index: 10;
 
@@ -70,7 +80,6 @@ nav a {
 .hero-section {
   position: inherit;
   margin-top: -1.5em;
-  height: 70vh;
 }
 
 .hero-section div {
@@ -84,18 +93,26 @@ nav a {
   font-size: 16px;
 }
 
+.a2{
+  padding-bottom: 1em;
+}
+
 .gb1 {
   padding-top: 2em;
+  padding-bottom: 0;
 }
 
 .tag-section{
-  
+  padding: 0 0 8em 0;
+  grid-column: 4 / span 9 !important;
 }
 
 .tag {
+  display: inline-block;
   border: 1px solid red;
   padding: 1rem 1rem;
-  vertical-align: middle;
+  margin-right: 1em;
+  height: 1.5em;
 }
 
 .tags p{
