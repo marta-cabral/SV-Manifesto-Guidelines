@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: Geist-Regular;
+  src: url(fonts/Geist-Regular.ttf);
+}
+
+@font-face {
   font-family: Geist-Mono-Regular;
   src: url(fonts/GeistMono-Regular.ttf);
 }
@@ -35,17 +40,17 @@ a {
 
 .image-button {
   background-color: #00d1d1;
-  width: 50px;
-  height: 230px;
+  width: 230px;
+  height: 50px;
   background-image: url("images/logokick.svg");
-  background-size: 26px 194px;
+  background-size: 194px 26px;
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  position: sticky;
   position: fixed;
   top: 0em;
   z-index: 10;
+  transform: rotate(-0.25turn) translate(-90px, -90px);
 }
 
 .grid-container {
@@ -63,6 +68,10 @@ p {
   font-size: 20px;
   color: #fff;
   margin: 0;
+}
+
+.bold {
+  font-family: SV-Geist;
 }
 
 /* -------------------------- NAV BAR */
@@ -112,11 +121,11 @@ nav a {
 
 h3 {
   position: absolute;
-  font-size: 10px;
+  font-size: 10px !important;
   font-family: Geist-Mono-Bold;
   text-transform: uppercase;
   letter-spacing: 6px;
-  color: #00d1d1;
+  color: #00d1d1 !important;
   padding: 0px 0px;
   line-height: 24px;
   writing-mode: sideways-lr;
@@ -173,16 +182,33 @@ h3 {
   padding-bottom: 10em;
 }
 
+.credits {
+  font-family: Geist-Regular;
+}
+
+#warning {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #8f8f8f;
+}
+
 .col-container {
-  display: table; /* Make the container element behave like a table */
-  width: 100%; /* Set full-width to expand the whole page */
-  border-collapse: separate;
-  border-spacing: 1rem 0;
-  padding-bottom: 1rem;
+  display: flex;
+  align-items: stretch; /* This ensures children are equal height */
+  padding: 13px 0 0 0;
+  gap: 13px;
 }
 
 .col {
-  display: table-cell; /* Make elements inside the container behave like table cells */
+  flex: 1;
+  display: flex;
+}
+
+.col img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* or contain if you don't want cropping */
+  display: block;
 }
 
 .grid-item {
@@ -193,6 +219,7 @@ img {
   width: 100%;
   display: block;
   border-radius: 3px;
+  display: table-cell;
 }
 
 .stick {
@@ -239,6 +266,10 @@ img {
     margin: 0;
   }
 
+  .image-button {
+    transform: rotate(0) translate(0);
+  }
+
   .subtitle {
     font-size: 13px;
   }
@@ -248,7 +279,8 @@ img {
   }
 
   .navbar {
-    margin-top: 35vh;
+    margin-top: 4vh;
+    top: 4em;
   }
 
   nav a {
@@ -276,11 +308,39 @@ img {
     padding-bottom: 5em;
   }
 
-  .tag-section {
-    padding: 0 0 8em 0;
-    grid-column: 1 / span 5 !important;
+  p {
+    padding-left: 2em;
   }
+
+  .gb1 {
+    padding-top: 0;
+  }
+
+  .tag-section {
+    grid-column: 1 / 6 !important;
+    padding: 0;
+  }
+
+  .hero-section {
+    padding: 6em 1em 0 1em;
+    height: auto;
+  }
+
   .tag {
-    margin-bottom: 1em;
+    display: block;
+    margin: 0.5em auto;
+  }
+
+  #info {
+    padding-bottom: 3em;
+    padding-top: 2em;
+  }
+
+  .info {
+    margin-bottom: 0px;
+  }
+
+  #colophon {
+    padding-bottom: 3em;
   }
 }
