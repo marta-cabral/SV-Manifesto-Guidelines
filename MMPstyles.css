@@ -70,7 +70,7 @@ p {
   margin: 0;
 }
 
-.bold{
+.bold {
   font-family: SV-Geist;
 }
 
@@ -182,14 +182,14 @@ h3 {
   padding-bottom: 10em;
 }
 
-.credits{
+.credits {
   font-family: Geist-Regular;
 }
 
-#warning{
+#warning {
   font-size: 12px;
   text-transform: uppercase;
-  color: #8F8F8F;
+  color: #8f8f8f;
 }
 
 .col-container {
@@ -308,29 +308,29 @@ img {
     padding-bottom: 5em;
   }
 
-  p{
+  p {
     padding-left: 2em;
   }
 
-  .gb1{
+  .gb1 {
     padding-top: 0;
   }
 
-  .tag-section{
+  .tag-section {
     grid-column: 1 / 6 !important;
     padding: 0;
   }
 
   .hero-section {
     padding: 6em 1em 0 1em;
-    height: 35vh;
+    height: auto;
   }
 
   .tag {
     display: block;
     margin: 0.5em auto;
   }
-  
+
   #info {
     padding-bottom: 3em;
     padding-top: 2em;
