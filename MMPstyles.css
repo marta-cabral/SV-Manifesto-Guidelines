@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: Geist-Regular;
+  src: url(fonts/Geist-Regular.ttf);
+}
+
+@font-face {
   font-family: Geist-Mono-Regular;
   src: url(fonts/GeistMono-Regular.ttf);
 }
@@ -65,6 +70,10 @@ p {
   margin: 0;
 }
 
+.bold{
+  font-family: SV-Geist;
+}
+
 /* -------------------------- NAV BAR */
 
 .navbar {
@@ -112,11 +121,11 @@ nav a {
 
 h3 {
   position: absolute;
-  font-size: 10px;
+  font-size: 10px !important;
   font-family: Geist-Mono-Bold;
   text-transform: uppercase;
   letter-spacing: 6px;
-  color: #00d1d1;
+  color: #00d1d1 !important;
   padding: 0px 0px;
   line-height: 24px;
   writing-mode: sideways-lr;
@@ -171,6 +180,16 @@ h3 {
 #colophon {
   padding-top: 5em;
   padding-bottom: 10em;
+}
+
+.credits{
+  font-family: Geist-Regular;
+}
+
+#warning{
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #8F8F8F;
 }
 
 .col-container {
@@ -247,6 +266,10 @@ img {
     margin: 0;
   }
 
+  .image-button {
+    transform: rotate(0) translate(0);
+  }
+
   .subtitle {
     font-size: 13px;
   }
@@ -256,7 +279,8 @@ img {
   }
 
   .navbar {
-    margin-top: 35vh;
+    margin-top: 18vh;
+    top: 4em;
   }
 
   nav a {
@@ -282,5 +306,35 @@ img {
 
   #info {
     padding-bottom: 5em;
+  }
+
+  p{
+    padding-left: 2em;
+  }
+
+  .gb1{
+    padding-top: 0;
+  }
+
+  .tag-section{
+    grid-column: 1 / 6 !important;
+  }
+
+  .tag {
+    display: block;
+    margin: 0.5em auto;
+  }
+  
+  #info {
+    padding-bottom: 3em;
+    padding-top: 7em;
+  }
+
+  .info {
+    margin-bottom: 0px;
+  }
+
+  #colophon {
+    padding-bottom: 3em;
   }
 }
