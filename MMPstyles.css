@@ -279,7 +279,7 @@ img {
   }
 
   .navbar {
-    margin-top: 18vh;
+    margin-top: 4vh;
     top: 4em;
   }
 
@@ -318,6 +318,11 @@ img {
 
   .tag-section{
     grid-column: 1 / 6 !important;
+    padding: 0;
+  }
+
+  .hero-section {
+    padding: 6em 1em 0 1em;
   }
 
   .tag {
@@ -327,7 +332,7 @@ img {
   
   #info {
     padding-bottom: 3em;
-    padding-top: 7em;
+    padding-top: 3em;
   }
 
   .info {
