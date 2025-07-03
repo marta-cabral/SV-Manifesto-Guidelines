@@ -323,6 +323,7 @@ img {
 
   .hero-section {
     padding: 6em 1em 0 1em;
+    height: 50vh;
   }
 
   .tag {
@@ -332,7 +333,7 @@ img {
   
   #info {
     padding-bottom: 3em;
-    padding-top: 3em;
+    padding-top: 2em;
   }
 
   .info {
