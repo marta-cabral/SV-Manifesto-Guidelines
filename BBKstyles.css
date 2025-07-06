@@ -175,18 +175,8 @@ img {
   text-align: right;
 }
 
-#V1 {
-  padding-top: 2em;
-}
-
 .sign-img img {
   width: 30vw;
-}
-
-#monograma {
-  grid-column: 5/ 13;
-  width: 9vw;
-  padding-bottom: 3em;
 }
 
 #UE1 {
@@ -214,6 +204,36 @@ img {
 }
 .fourth img {
   width: 34vw;
+}
+
+#card1 {
+  border-radius: 10px;
+  background: #1c1e21;
+  border: 2px solid #7948ce;
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  margin-top: 2em;
+}
+
+#card2 {
+  border-radius: 10px;
+  background: #7948ce;
+  padding: 20px;
+  width: 400px;
+  height: 200px;
+  margin-top: 1em;
+}
+
+.links {
+  display: flex;
+  gap: 13px;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+}
+
+.links img {
+  width: 30px;
 }
 
 @media (max-width: 600px) {
