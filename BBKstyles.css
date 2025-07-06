@@ -25,6 +25,7 @@ a {
 
 .sections {
   padding: 0 1em;
+  margin: 10em 0;
 }
 
 .grid-container {
@@ -53,7 +54,6 @@ p {
   margin-top: 0vh;
   mix-blend-mode: difference;
   z-index: 10;
-
 }
 
 h1 {
@@ -94,57 +94,58 @@ nav a {
 }
 
 .title {
-  grid-column: 1 / span 3;
+  grid-column: 1 / span 2;
   margin-bottom: 24px;
 }
 
 .intro {
-    grid-column: 4 / 11;
-  }
+  grid-column: 4 / 11;
+}
 
 .info {
   grid-column: 5 / 12;
-  margin-bottom: 24px;
+  margin-bottom: 5em;
 }
 
 #info {
-  padding-bottom: 3em;
+  padding: 0 1em;
+  padding-bottom: 13em;
   padding-top: 30vh;
 }
 
-#bar1{
-    grid-column: 5 / 7;
+#bar1 {
+  grid-column: 5 / 7;
 }
 
-#bar2{
-    grid-column: 7 / 10;
+#bar2 {
+  grid-column: 7 / 10;
 }
 
-#bar3{
-    grid-column: 10 / 12;
+#bar3 {
+  grid-column: 10 / 12;
 }
 
-#logo{
-    width: 15vw;
-    display: block;
-    margin: auto;
-    padding: 5em 0 10em 0;
+#logo {
+  width: 15vw;
+  display: block;
+  margin: auto;
+  padding: 5em 0 10em 0;
 }
 
-.logo-grid-div{
-    padding: 5em 0 2em 0;
-    position: relative;
-    width: 100vw;
-    height: 25vw;  /* manually adjust this to fit your scaled image */
-    overflow: hidden;
-  }
+.logo-grid-div {
+  padding: 5em 0 2em 0;
+  position: relative;
+  width: 100vw;
+  /* height: 25vw; manually adjust this to fit your scaled image */
+  overflow: hidden;
+}
 
 .logo-grid-div img {
-    display: block;
-    margin-left: 40vw;
-    transform-origin: left center;
-    width: 100vw;   /* 150% of viewport width */
-    height: auto;
+  display: block;
+  margin-left: 43vw;
+  transform-origin: left center;
+  width: 70vw;
+  height: auto;
 }
 
 img {
@@ -158,46 +159,61 @@ img {
   top: 0.8em;
   margin-left: 50em;
   position: sticky;
-    z-index: 10;
-
+  z-index: 10;
 }
 
 .stick2 {
   mix-blend-mode: difference;
   top: 0.8em;
-  margin-bottom: 2em;
+  margin-bottom: 13em;
   position: sticky;
   z-index: 10;
 }
 
-.versions{
-    grid-column: 3 / 4;
-    text-align: right;
+.versions {
+  grid-column: 3 / 4;
+  text-align: right;
 }
 
-#V1{
-    padding-top: 2em;
+#V1 {
+  padding-top: 2em;
 }
 
-.sign-img{
-    grid-column: 5/ 13;
-    padding: 2em 0 3em 0;
+.sign-img img {
+  width: 30vw;
 }
 
-.sign-img img{
-    width: 30vw;
+#monograma {
+  grid-column: 5/ 13;
+  width: 9vw;
+  padding-bottom: 3em;
 }
 
-#monograma{
-    grid-column: 5/ 13;
-    width: 9vw;
-    padding-bottom: 3em;
-}
-
-#UE1{
+#UE1 {
   grid-column: 5/ 13;
   width: 19vw;
   padding-bottom: 3em;
+}
+
+.comp {
+  grid-column: 5/ 13;
+}
+
+.first img {
+  width: 30vw;
+  margin-bottom: 2em;
+}
+
+.second img {
+  width: 9vw;
+}
+
+.third img {
+  width: 53vw;
+  margin-bottom: 2em;
+}
+.fourth img {
+  width: 34vw;
 }
 
 @media (max-width: 600px) {
@@ -207,7 +223,7 @@ img {
     column-gap: 13px;
   }
 
-  .hero-section{
+  .hero-section {
     padding: 3em 1em 0 1em;
     height: 60vh;
   }
@@ -239,15 +255,15 @@ img {
     margin-top: 35vh;
   }
 
-  nav a{
+  nav a {
     grid-column: 5 / 6;
   }
 
-  .title{
+  .title {
     grid-column: 1 / 6;
   }
 
-  .info{
+  .info {
     grid-column: 1 / 6;
   }
 
@@ -263,5 +279,4 @@ img {
   #info {
     padding-bottom: 5em;
   }
-
 }
