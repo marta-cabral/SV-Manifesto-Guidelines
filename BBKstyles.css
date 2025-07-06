@@ -104,7 +104,7 @@ nav a {
 
 .info {
   grid-column: 5 / 12;
-  margin-bottom: 24px;
+  margin-bottom: 75px;
 }
 
 #info {
@@ -128,11 +128,11 @@ nav a {
     width: 15vw;
     display: block;
     margin: auto;
-    padding: 5em 0 10em 0;
+    padding: 5em 0 5vw 0;
 }
 
 .logo-grid-div{
-    padding: 5em 0 2em 0;
+    padding: 2vw 0 2em 0;
     position: relative;
     width: 100vw;
     height: 25vw;  /* manually adjust this to fit your scaled image */
@@ -151,6 +151,10 @@ img {
   width: 100%;
   display: block;
   border-radius: 3px;
+}
+
+.img-full{
+  padding-bottom: 5vw;
 }
 
 .stick {
@@ -175,13 +179,9 @@ img {
     text-align: right;
 }
 
-#V1{
-    padding-top: 2em;
-}
-
 .sign-img{
     grid-column: 5/ 13;
-    padding: 2em 0 3em 0;
+    padding: 0 0 3em 0;
 }
 
 .sign-img img{
@@ -198,6 +198,36 @@ img {
   grid-column: 5/ 13;
   width: 19vw;
   padding-bottom: 3em;
+}
+
+#card1{
+  border-radius: 10px;
+  background: #1C1E21;
+  border: 2px solid #7948CE;
+  padding: 20px; 
+  width: 400px;
+  height: 200px; 
+  margin-top: 2em;
+}
+
+#card2{
+  border-radius: 10px;
+  background: #7948CE;
+  padding: 20px; 
+  width: 400px;
+  height: 200px; 
+  margin-top: 1em;
+}
+
+.links{
+  display: flex;
+  gap: 13px;
+  text-transform: uppercase;
+  padding-bottom: 0.5em;
+}
+
+.links img{
+  width: 30px;
 }
 
 @media (max-width: 600px) {
