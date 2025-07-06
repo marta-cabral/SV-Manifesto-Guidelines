@@ -194,6 +194,12 @@ img {
     padding-bottom: 3em;
 }
 
+#UE1{
+  grid-column: 5/ 13;
+  width: 19vw;
+  padding-bottom: 3em;
+}
+
 @media (max-width: 600px) {
   .grid-container {
     display: grid;
