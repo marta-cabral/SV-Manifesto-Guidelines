@@ -109,8 +109,7 @@ nav a {
 
 #info {
   padding: 0 1em;
-  padding-bottom: 13em;
-  padding-top: 30vh;
+  padding-top: 10vh;
 }
 
 #bar1 {
@@ -165,9 +164,10 @@ img {
 .stick2 {
   mix-blend-mode: difference;
   top: 0.8em;
-  margin-bottom: 13em;
   position: sticky;
   z-index: 10;
+  padding: 0 1em;
+  margin: 5em 0 13em 0;
 }
 
 .versions {
@@ -271,10 +271,6 @@ img {
     grid-column: 1 / 5;
   }
 
-  .navbar {
-    margin-top: 35vh;
-  }
-
   nav a {
     grid-column: 5 / 6;
   }
@@ -283,20 +279,84 @@ img {
     grid-column: 1 / 6;
   }
 
+  .intro{
+    grid-column: 1 / 6;
+  }
+
   .info {
     grid-column: 1 / 6;
   }
 
+  #logo{
+    padding: 3em 0 5em 0;
+  }
+
+  .logo-grid-div img {
+    margin-left: 39vw;
+    width: 130vw;
+  }
+
+  .sections{
+    margin: 2em 0;
+    padding: 0 0.7em;
+  }
+
   .stick {
     margin-left: 0em;
+    padding: 0 0.7em;
   }
 
   .stick2 {
     top: 4em;
     margin: 1.5em 0em;
+    padding: 0 0.7em;
   }
 
   #info {
-    padding-bottom: 5em;
+    padding: 0 0.7em 5em 0.7em;
+  }
+
+  .versions{
+    grid-column: 1 / 2;
+    text-align: left;
+  }
+
+  #bar1 {
+    grid-column: 1 / 3;
+  }
+  
+  #bar2 {
+    grid-column: 3 / 6;
+  }
+  
+  #bar3 {
+    grid-column: 3 / 6;
+  }
+
+  .comp{
+    grid-column: 2 / 6;
+  }
+
+  .first img {
+    width: 45vw;
+  }
+  
+  .second img {
+    width: 14vw;
+  }
+  
+  .third img {
+    width: 73vw;
+  }
+  .fourth img {
+    width: 45vw;
+  }
+
+  #card1{
+    width: auto;
+  }
+
+  #card2{
+    width: auto;
   }
 }
