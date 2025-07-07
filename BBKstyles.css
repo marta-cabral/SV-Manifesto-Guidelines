@@ -179,12 +179,6 @@ img {
   width: 30vw;
 }
 
-#UE1 {
-  grid-column: 5/ 13;
-  width: 19vw;
-  padding-bottom: 3em;
-}
-
 .comp {
   grid-column: 5/ 13;
 }
@@ -285,6 +279,7 @@ img {
 
   .info {
     grid-column: 1 / 6;
+    margin-bottom: 2em;
   }
 
   #logo{
@@ -297,7 +292,7 @@ img {
   }
 
   .sections{
-    margin: 2em 0;
+    margin: 0 0 3em 0;
     padding: 0 0.7em;
   }
 
@@ -313,12 +308,13 @@ img {
   }
 
   #info {
-    padding: 0 0.7em 5em 0.7em;
+    padding: 2em 0.7em 3em 0.7em;
   }
 
   .versions{
     grid-column: 1 / 2;
     text-align: left;
+    padding-bottom: 1em;
   }
 
   #bar1 {
@@ -358,5 +354,9 @@ img {
 
   #card2{
     width: auto;
+  }
+
+  .img-full{
+    padding-bottom: 3em;
   }
 }
